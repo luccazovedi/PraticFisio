@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pratic Fisio — Fisioterapia domiciliar, clínica e online | Dra. Cristiane Moura</title>
+<meta name="description" content="Fisioterapia baseada em evidência para dor, mobilidade e prevenção de quedas. Atendimento domiciliar, em clínica, online e em grupo. Agende pelo WhatsApp: (11) 99398-6807.">
+<meta name="theme-color" content="#0F3B36">
+<link rel="canonical" href="https://www.praticfisio.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Pratic Fisio — Movimento que devolve autonomia">
+<meta property="og:description" content="Fisioterapia baseada em evidência para dor, mobilidade e prevenção de quedas. Domiciliar, clínica, online e grupos.">
+<meta property="og:url" content="https://www.praticfisio.com/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physiotherapy",
+  "name": "Pratic Fisio",
+  "description": "Fisioterapia domiciliar, clínica, online e em grupo. Prevenção de quedas, dor crônica e reabilitação.",
+  "url": "https://www.praticfisio.com/",
+  "telephone": "+5511993986807",
+  "email": "crismourah@praticfisio.com",
+  "areaServed": { "@type": "City", "name": "São Paulo" },
+  "medicalSpecialty": "Physiotherapy",
+  "founder": { "@type": "Person", "name": "Cristiane Moura", "jobTitle": "Fisioterapeuta" },
+  "sameAs": ["https://www.instagram.com/praticfisio/"],
+  "availableService": [
+    {"@type":"MedicalTherapy","name":"Atendimento domiciliar"},
+    {"@type":"MedicalTherapy","name":"Atendimento em clínica"},
+    {"@type":"MedicalTherapy","name":"Teleconsulta"},
+    {"@type":"MedicalTherapy","name":"Pilates clínico"},
+    {"@type":"MedicalTherapy","name":"Atendimento a grupos"}
+  ]
+}
+</script>
+
+<style>
+:root{
+  --ink:#0F3B36;
+  --ink-2:#1C5F55;
+  --paper:#FBF8F3;
+  --paper-2:#F2ECE1;
+  --clay:#C4623F;
+  --sand:#D9C9A8;
+  --line:rgba(15,59,54,.14);
+  --muted:rgba(15,59,54,.68);
+
+  --display:'Fraunces',Georgia,serif;
+  --body:'Outfit',system-ui,-apple-system,sans-serif;
+
+  --gut:20px;
+  --max:1120px;
+  --r:14px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--body);
+  font-weight:300;
+  font-size:16.5px;
+  line-height:1.65;
+  color:var(--ink);
+  background:var(--paper);
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--display);font-weight:500;line-height:1.12;letter-spacing:-.015em;margin:0}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+:focus-visible{outline:2.5px solid var(--clay);outline-offset:3px;border-radius:4px}
+
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding-left:var(--gut);padding-right:var(--gut)}
+.sec{padding:64px 0}
+.eyebrow{
+  font-size:11.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--clay);margin-bottom:14px;display:flex;align-items:center;gap:9px;
+}
+.eyebrow::before{content:"";width:22px;height:1.5px;background:var(--clay);flex:none}
+
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:60;
+  background:rgba(251,248,243,.86);
+  backdrop-filter:saturate(180%) blur(14px);
+  -webkit-backdrop-filter:saturate(180%) blur(14px);
+  border-bottom:1px solid transparent;
+  transition:border-color .3s;
+}
+header.stuck{border-bottom-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:62px}
+.brand{display:flex;align-items:center;gap:9px;text-decoration:none;font-family:var(--display);font-size:19px;font-weight:600;letter-spacing:-.02em}
+.mark{width:26px;height:26px;flex:none}
+.nav-links{display:none}
+.nav-cta{
+  display:inline-flex;align-items:center;gap:7px;
+  background:var(--ink);color:var(--paper);text-decoration:none;
+  font-family:var(--body);font-size:13.5px;font-weight:500;
+  padding:9px 15px;border-radius:100px;
+  transition:transform .2s,background .2s;
+}
+.nav-cta:hover{background:var(--ink-2);transform:translateY(-1px)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:44px 0 56px;overflow:hidden}
+.hero::after{
+  content:"";position:absolute;right:-160px;top:-90px;width:420px;height:420px;
+  background:radial-gradient(circle,rgba(217,201,168,.5),transparent 66%);
+  z-index:0;pointer-events:none;
+}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:clamp(2.35rem,10.5vw,3.6rem);letter-spacing:-.03em}
+.hero h1 em{font-style:italic;color:var(--clay);font-weight:400}
+.hero-lede{margin-top:20px;font-size:17px;color:var(--muted);max-width:46ch}
+
+.cta-row{display:flex;flex-direction:column;gap:11px;margin-top:28px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:15px 22px;border-radius:100px;text-decoration:none;
+  font-size:15.5px;font-weight:500;font-family:var(--body);
+  transition:transform .2s,box-shadow .2s,background .2s;
+}
+.btn-1{background:var(--clay);color:#fff;box-shadow:0 8px 22px -8px rgba(196,98,63,.6)}
+.btn-1:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px rgba(196,98,63,.7)}
+.btn-2{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn-2:hover{background:var(--paper-2);border-color:var(--ink)}
+
+.trust{
+  display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:26px;
+  font-size:13.5px;color:var(--muted);
+}
+.trust li{display:flex;align-items:center;gap:7px}
+.trust svg{flex:none;color:var(--clay)}
+
+/* ---------- pain / entry points ---------- */
+.pains{background:var(--paper-2)}
+.pain-grid{display:grid;gap:11px;margin-top:26px}
+.pain{
+  display:flex;align-items:center;gap:13px;
+  padding:16px 18px;background:var(--paper);
+  border:1px solid var(--line);border-radius:var(--r);
+  text-decoration:none;transition:transform .2s,border-color .2s;
+}
+.pain:hover{transform:translateX(4px);border-color:var(--ink)}
+.pain-ico{
+  width:38px;height:38px;flex:none;border-radius:11px;
+  background:var(--sand);display:grid;place-items:center;color:var(--ink);
+}
+.pain b{font-weight:500;font-size:15.5px;display:block}
+.pain span{font-size:13.5px;color:var(--muted);display:block;line-height:1.4}
+.pain-arrow{margin-left:auto;color:var(--clay);flex:none}
+
+/* ---------- services ---------- */
+.svc-grid{display:grid;gap:14px;margin-top:28px}
+.svc{
+  padding:24px 22px;border-radius:var(--r);
+  border:1px solid var(--line);background:var(--paper);
+  position:relative;overflow:hidden;
+}
+.svc.feat{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.svc.feat .svc-meta,.svc.feat p{color:rgba(251,248,243,.76)}
+.svc.feat .tag{background:rgba(251,248,243,.14);color:var(--sand);border-color:transparent}
+.svc-meta{
+  font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--clay);font-weight:500;margin-bottom:9px;
+}
+.svc h3{font-size:1.42rem;margin-bottom:9px}
+.svc p{font-size:15px;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.tag{
+  font-size:12.5px;padding:5px 11px;border-radius:100px;
+  background:var(--paper-2);border:1px solid var(--line);color:var(--muted);
+}
+
+/* ---------- antes da queda ---------- */
+.aq{background:var(--ink);color:var(--paper);position:relative;overflow:hidden}
+.aq::before{
+  content:"";position:absolute;left:-120px;bottom:-120px;width:360px;height:360px;
+  border:1.5px solid rgba(217,201,168,.22);border-radius:50%;
+}
+.aq .wrap{position:relative;z-index:1}
+.aq .eyebrow{color:var(--sand)}
+.aq .eyebrow::before{background:var(--sand)}
+.aq h2{font-size:clamp(1.95rem,8vw,2.8rem)}
+.aq-lede{margin-top:16px;color:rgba(251,248,243,.78);font-size:16.5px;max-width:52ch}
+.aq-quote{
+  margin:28px 0;padding-left:18px;border-left:2px solid var(--sand);
+  font-family:var(--display);font-size:1.28rem;font-style:italic;
+  line-height:1.4;color:var(--sand);
+}
+.aq-list{display:grid;gap:10px;margin-top:22px}
+.aq-list li{
+  display:flex;gap:11px;font-size:15px;color:rgba(251,248,243,.82);
+  padding-bottom:10px;border-bottom:1px solid rgba(251,248,243,.12);
+}
+.aq-list li:last-child{border-bottom:0}
+.aq-list b{color:var(--paper);font-weight:500;font-family:var(--display);font-size:15.5px}
+.aq .btn-1{margin-top:26px}
+
+/* ---------- método ---------- */
+.steps{display:grid;gap:0;margin-top:28px;counter-reset:s}
+.step{
+  display:flex;gap:16px;padding:20px 0;
+  border-top:1px solid var(--line);
+}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step-n{
+  font-family:var(--display);font-size:1.05rem;color:var(--clay);
+  flex:none;width:26px;padding-top:2px;font-weight:600;
+}
+.step h3{font-size:1.15rem;margin-bottom:5px}
+.step p{font-size:14.5px;color:var(--muted)}
+
+/* ---------- about ---------- */
+.about{background:var(--paper-2)}
+.about-card{
+  margin-top:26px;padding:26px 22px;background:var(--paper);
+  border-radius:var(--r);border:1px solid var(--line);
+}
+.about-card h3{font-size:1.28rem;margin-bottom:12px}
+.about-card p+p{margin-top:12px}
+.about-card p{font-size:15px;color:var(--muted)}
+.vals{display:grid;gap:12px;margin-top:24px}
+.val{padding:18px;border-radius:var(--r);background:var(--paper);border:1px solid var(--line)}
+.val h4{font-size:1.02rem;margin-bottom:5px}
+.val p{font-size:14px;color:var(--muted)}
+
+/* ---------- faq ---------- */
+.faq{margin-top:26px;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+summary{
+  padding:18px 34px 18px 0;cursor:pointer;list-style:none;position:relative;
+  font-family:var(--display);font-size:1.05rem;font-weight:500;line-height:1.35;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{
+  content:"";position:absolute;right:4px;top:24px;
+  width:9px;height:9px;border-right:1.8px solid var(--clay);border-bottom:1.8px solid var(--clay);
+  transform:rotate(45deg);transition:transform .25s;
+}
+details[open] summary::after{transform:rotate(-135deg);top:27px}
+details p{padding:0 0 18px;font-size:15px;color:var(--muted)}
+
+/* ---------- final cta ---------- */
+.final{background:var(--ink);color:var(--paper);text-align:center}
+.final h2{font-size:clamp(1.9rem,8vw,2.7rem)}
+.final p{margin-top:14px;color:rgba(251,248,243,.76);font-size:16.5px}
+.final .cta-row{align-items:center;margin-top:28px}
+.final .btn-2{color:var(--paper);border-color:rgba(251,248,243,.3)}
+.final .btn-2:hover{background:rgba(251,248,243,.1);border-color:var(--sand)}
+.chan{margin-top:30px;display:grid;gap:6px;font-size:14.5px;color:rgba(251,248,243,.72)}
+.chan a{color:var(--sand);text-decoration:none;font-weight:400}
+
+/* ---------- footer ---------- */
+footer{padding:34px 0 96px;font-size:13.5px;color:var(--muted)}
+.foot-top{display:flex;flex-direction:column;gap:18px}
+.foot-links{display:flex;flex-wrap:wrap;gap:8px 20px}
+.foot-links a{text-decoration:none;transition:color .2s}
+.foot-links a:hover{color:var(--clay)}
+.foot-note{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;line-height:1.6}
+
+/* ---------- sticky mobile bar ---------- */
+.dock{
+  position:fixed;left:0;right:0;bottom:0;z-index:70;
+  display:flex;gap:9px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(251,248,243,.93);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-top:1px solid var(--line);
+  transform:translateY(120%);transition:transform .35s cubic-bezier(.16,1,.3,1);
+}
+.dock.on{transform:translateY(0)}
+.dock a{flex:1;padding:13px 10px;font-size:14.5px}
+
+/* ---------- motion ---------- */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.16,1,.3,1)}
+.rv.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+  .dock{transform:translateY(0)}
+}
+
+/* ---------- ≥600px ---------- */
+@media (min-width:600px){
+  body{font-size:17px}
+  :root{--gut:32px}
+  .sec{padding:84px 0}
+  .cta-row{flex-direction:row;flex-wrap:wrap}
+  .pain-grid{grid-template-columns:1fr 1fr}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .svc.feat{grid-column:1/-1}
+  .vals{grid-template-columns:1fr 1fr}
+  .aq-list{grid-template-columns:1fr 1fr;gap:10px 24px}
+}
+
+/* ---------- ≥900px ---------- */
+@media (min-width:900px){
+  :root{--gut:40px}
+  .sec{padding:104px 0}
+  .nav{height:74px}
+  .nav-links{
+    display:flex;gap:30px;font-size:14.5px;color:var(--muted);
+  }
+  .nav-links a{text-decoration:none;position:relative;padding:4px 0;transition:color .2s}
+  .nav-links a::after{
+    content:"";position:absolute;left:0;bottom:0;width:0;height:1.5px;
+    background:var(--clay);transition:width .28s;
+  }
+  .nav-links a:hover{color:var(--ink)}
+  .nav-links a:hover::after{width:100%}
+
+  .hero{padding:78px 0 92px}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+  .hero h1{font-size:4.1rem}
+  .hero-lede{font-size:18px}
+
+  .hero-panel{
+    padding:32px;border-radius:20px;background:var(--ink);color:var(--paper);
+    position:relative;overflow:hidden;
+  }
+  .hero-panel h3{font-family:var(--display);font-size:1.32rem;margin-bottom:6px}
+  .hero-panel > p{font-size:14.5px;color:rgba(251,248,243,.72);margin-bottom:22px}
+  .hp-list{display:grid;gap:14px}
+  .hp-list li{display:flex;gap:12px;align-items:flex-start;font-size:14.5px;color:rgba(251,248,243,.85)}
+  .hp-list svg{flex:none;color:var(--sand);margin-top:3px}
+  .hp-foot{
+    margin-top:24px;padding-top:20px;border-top:1px solid rgba(251,248,243,.14);
+    font-size:13px;color:rgba(251,248,243,.6);
+  }
+
+  .pain-grid{grid-template-columns:repeat(4,1fr)}
+  .pain{flex-direction:column;align-items:flex-start;gap:14px;padding:22px}
+  .pain-arrow{margin-left:0;margin-top:auto}
+  .svc-grid{grid-template-columns:repeat(3,1fr)}
+  .svc.feat{grid-column:span 3;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;padding:38px}
+  .vals{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr);gap:0 44px}
+  .aq .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  .about-inner{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+  .about-card{margin-top:0}
+  .faq-inner{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
+  .faq{margin-top:0}
+  .foot-top{flex-direction:row;justify-content:space-between;align-items:flex-start}
+  .dock{display:none}
+  footer{padding-bottom:34px}
+  .final .cta-row{justify-content:center}
+}
+.hero-panel{display:none}
+@media (min-width:900px){.hero-panel{display:block}}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main" style="position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:12px 18px;z-index:100" onfocus="this.style.left='12px';this.style.top='12px'" onblur="this.style.left='-9999px'">Ir para o conteúdo</a>
+
+<header id="hd">
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <circle cx="16" cy="16" r="15" stroke="#0F3B36" stroke-width="1.6"/>
+        <path d="M8 20c3.2 0 3.2-8 6.4-8s3.2 8 6.4 8 3.2-4 3.2-4" stroke="#C4623F" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+      Pratic Fisio
+    </a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#antes-da-queda">Antes da Queda</a>
+      <a href="#metodo">Como funciona</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/5511993986807" target="_blank" rel="noopener">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.2-.8 1-.9 1.1-.3.2-.6 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1a11.4 11.4 0 0 0 4.4 3.9c1.6.6 1.9.5 2.3.5s1.6-.7 1.9-1.3.3-1.2.2-1.3zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+      Agendar
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Fisioterapia baseada em evidência</p>
+      <h1>Sair da cama sem pensar <em>duas vezes</em>.</h1>
+      <p class="hero-lede">A Dra. Cristiane Moura leva a fisioterapia até você — em casa, na clínica ou online. O foco não é só tirar a dor: é devolver o movimento que a rotina pediu de volta.</p>
+
+      <div class="cta-row">
+        <a class="btn btn-1" href="https://wa.me/5511993986807" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.2-.8 1-.9 1.1-.3.2-.6 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1a11.4 11.4 0 0 0 4.4 3.9c1.6.6 1.9.5 2.3.5s1.6-.7 1.9-1.3.3-1.2.2-1.3zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+          Falar no WhatsApp
+        </a>
+        <a class="btn btn-2" href="#servicos">Ver os atendimentos</a>
+      </div>
+
+      <ul class="trust">
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Atendimento na sua casa</li>
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Avaliação antes do plano</li>
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Orçamento fechado</li>
+      </ul>
+    </div>
+
+    <aside class="hero-panel">
+      <h3>Primeira conversa, sem custo</h3>
+      <p>Antes de agendar, a gente entende o seu caso.</p>
+      <ul class="hp-list">
+        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 8v5l3 2"/><circle cx="12" cy="12" r="9"/></svg><span>Resposta no WhatsApp em poucas horas</span></li>
+        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 11l3 3 6-6"/><path d="M21 12a9 9 0 1 1-4.2-7.6"/></svg><span>Você descobre se é caso de fisioterapia</span></li>
+        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 21h18M5 21V9l7-5 7 5v12"/></svg><span>Atendimento em casa, clínica ou online</span></li>
+      </ul>
+      <p class="hp-foot">Dra. Cristiane Moura · Fisioterapeuta</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ENTRADAS POR DOR -->
+<section class="sec pains" id="para-quem">
+  <div class="wrap">
+    <div class="rv">
+      <p class="eyebrow">Por onde começar</p>
+      <h2 style="font-size:clamp(1.75rem,7vw,2.4rem);max-width:20ch">O que está te incomodando hoje?</h2>
+    </div>
+    <div class="pain-grid rv">
+      <a class="pain" href="#servicos">
+        <span class="pain-ico"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3v6M12 15v6M5 12h14"/><circle cx="12" cy="12" r="2.2"/></svg></span>
+        <span><b>Dor que não passa</b><span>Lombar, ombro, joelho, fibromialgia</span></span>
+        <svg class="pain-arrow" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+      </a>
+      <a class="pain" href="#antes-da-queda">
+        <span class="pain-ico"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 20h16"/><path d="M12 4v9"/><path d="M8 13l4 4 4-4"/></svg></span>
+        <span><b>Medo de cair</b><span>Equilíbrio, força e confiança</span></span>
+        <svg class="pain-arrow" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+      </a>
+      <a class="pain" href="#servicos">
+        <span class="pain-ico"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 18l4-6 3 3 5-8"/><path d="M4 21h16"/></svg></span>
+        <span><b>Voltar a se mover</b><span>Sedentarismo e retomada segura</span></span>
+        <svg class="pain-arrow" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+      </a>
+      <a class="pain" href="#servicos">
+        <span class="pain-ico"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg></span>
+        <span><b>Recuperar de lesão</b><span>Entorses, lesões musculares, pós-alta</span></span>
+        <svg class="pain-arrow" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="sec" id="servicos">
+  <div class="wrap">
+    <div class="rv">
+      <p class="eyebrow">Atendimentos</p>
+      <h2 style="font-size:clamp(1.85rem,7.5vw,2.6rem);max-width:22ch">Cinco formas de te atender. Uma só forma de trabalhar.</h2>
+      <p style="margin-top:16px;color:var(--muted);max-width:52ch">Avaliação, plano de tratamento e orçamento antes de qualquer sessão. Técnicas escolhidas por evidência, não por moda.</p>
+    </div>
+
+    <div class="svc-grid">
+      <article class="svc feat rv">
+        <div>
+          <p class="svc-meta" style="color:var(--sand)">Mais procurado</p>
+          <h3>Atendimento domiciliar</h3>
+          <p>A fisioterapia chega até você. Sem deslocamento, sem sala de espera, sem depender de quem te leva — e no ambiente onde o movimento realmente precisa funcionar.</p>
+        </div>
+        <div>
+          <div class="tags">
+            <span class="tag">Terapia manual</span>
+            <span class="tag">Dry needling</span>
+            <span class="tag">Eletroterapia</span>
+            <span class="tag">Exercício terapêutico</span>
+            <span class="tag">Pilates clínico</span>
+            <span class="tag">Terapia cognitivo-funcional</span>
+          </div>
+          <a class="btn btn-1" style="margin-top:22px" href="https://wa.me/5511993986807" target="_blank" rel="noopener">Agendar avaliação em casa</a>
+        </div>
+      </article>
+
+      <article class="svc rv">
+        <p class="svc-meta">Presencial</p>
+        <h3>Atendimento em clínica</h3>
+        <p>Sessões individuais com foco em prevenção, reabilitação e ganho de função. Anamnese, avaliação e plano com orçamento fechado.</p>
+      </article>
+
+      <article class="svc rv">
+        <p class="svc-meta">A distância</p>
+        <h3>Teleconsulta</h3>
+        <p>Atendimento adaptado ao seu ambiente, com objetos simples que você já tem em casa. Sem trânsito, sem tempo curto.</p>
+      </article>
+
+      <article class="svc rv">
+        <p class="svc-meta">Online e domiciliar</p>
+        <h3>Pilates clínico</h3>
+        <p>Os princípios do Pilates aplicados com objetivo terapêutico — controle, respiração e força onde o seu corpo precisa.</p>
+      </article>
+
+      <article class="svc rv">
+        <p class="svc-meta">Coletivo</p>
+        <h3>Atendimento a grupos</h3>
+        <p>Condomínios, famílias, empresas e instituições de longa permanência. Plano por condição, a partir de 18 anos.</p>
+      </article>
+
+      <article class="svc rv">
+        <p class="svc-meta">Orientação</p>
+        <h3>Consultoria online</h3>
+        <p>Para quem ainda tem dúvida: qual terapia serve, quanto tempo leva, quanto custa. Uma conversa antes de decidir.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ANTES DA QUEDA -->
+<section class="sec aq" id="antes-da-queda">
+  <div class="wrap">
+    <div class="rv">
+      <p class="eyebrow">Programa em grupo · Condomínios</p>
+      <h2>Projeto Antes da Queda</h2>
+      <p class="aq-lede">Fisioterapia preventiva em grupo, dentro do próprio condomínio. Criado pela Dra. Cristiane Moura para agir antes — não depois da fratura, da internação e do medo.</p>
+      <blockquote class="aq-quote">Prevenir é sempre mais humano, mais inteligente e mais eficaz do que remediar.</blockquote>
+      <a class="btn btn-1" href="https://wa.me/5511993986807" target="_blank" rel="noopener">Levar para o meu condomínio</a>
+    </div>
+
+    <div class="rv">
+      <ul class="aq-list">
+        <li><b>Equilíbrio</b><span>Treino específico para reduzir o risco de queda</span></li>
+        <li><b>Força funcional</b><span>Potência muscular aplicada ao dia a dia</span></li>
+        <li><b>Dupla tarefa</b><span>Coordenação motora e atenção juntas</span></li>
+        <li><b>Ritmo</b><span>Música com finalidade terapêutica</span></li>
+        <li><b>Avaliação individual</b><span>Nível funcional e classificação de risco</span></li>
+        <li><b>Convivência</b><span>Socialização e confiança ao caminhar</span></li>
+      </ul>
+      <p style="margin-top:22px;font-size:14px;color:rgba(251,248,243,.6);line-height:1.6">Baseado em fisioterapia gerontológica, protocolos internacionais de prevenção da fragilidade e exercícios multicomponentes adaptados a cada participante.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTODO -->
+<section class="sec" id="metodo">
+  <div class="wrap">
+    <div class="rv">
+      <p class="eyebrow">Como funciona</p>
+      <h2 style="font-size:clamp(1.85rem,7.5vw,2.6rem);max-width:20ch">Do primeiro contato ao alta consciente</h2>
+    </div>
+    <ol class="steps rv">
+      <li class="step">
+        <span class="step-n">01</span>
+        <div>
+          <h3>Conversa inicial</h3>
+          <p>Você manda mensagem no WhatsApp contando o que sente. A gente identifica se é caso de fisioterapia e qual formato faz sentido.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-n">02</span>
+        <div>
+          <h3>Avaliação</h3>
+          <p>Anamnese e avaliação funcional completa. Nada de protocolo pronto antes de entender o seu corpo e a sua rotina.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-n">03</span>
+        <div>
+          <h3>Plano e orçamento</h3>
+          <p>Você recebe o plano de tratamento com objetivos, técnicas e valor fechado. Decisão compartilhada, sem surpresa.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-n">04</span>
+        <div>
+          <h3>Tratamento e autonomia</h3>
+          <p>Sessões com reavaliação ao longo do caminho. O objetivo é você sair entendendo o próprio corpo e mantendo o resultado.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="sec about" id="sobre">
+  <div class="wrap about-inner">
+    <div class="rv">
+      <p class="eyebrow">Sobre</p>
+      <h2 style="font-size:clamp(1.85rem,7.5vw,2.6rem);max-width:18ch">Muito além da reabilitação</h2>
+      <div class="about-card">
+        <h3>Dra. Cristiane Moura</h3>
+        <p>Fisioterapia não termina quando a dor passa. O compromisso da Pratic Fisio é te ajudar a construir hábitos que evitam o problema seguinte.</p>
+        <p>Prevenir lesões fortalecendo o corpo. Colocar exercício seguro na rotina. Ensinar autocuidado de verdade. Aliar saúde física e mental — porque uma sustenta a outra.</p>
+        <p>A meta é que cada paciente saia não só recuperado, mas consciente sobre a própria saúde.</p>
+      </div>
+    </div>
+
+    <div class="rv">
+      <div class="vals" style="grid-template-columns:1fr">
+        <div class="val">
+          <h4>Missão</h4>
+          <p>Tornar o acesso à fisioterapia mais democrático, com tratamento de qualidade para quem precisa recuperar mobilidade e funcionalidade.</p>
+        </div>
+        <div class="val">
+          <h4>Ciência e excelência</h4>
+          <p>Abordagens baseadas em evidência, revisadas e atualizadas continuamente.</p>
+        </div>
+        <div class="val">
+          <h4>Decisões compartilhadas</h4>
+          <p>O paciente participa ativamente do próprio processo — e sabe por que cada escolha foi feita.</p>
+        </div>
+        <div class="val">
+          <h4>Expectativas alinhadas</h4>
+          <p>Transparência entre o que você quer alcançar e o que o tratamento pode entregar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="duvidas">
+  <div class="wrap faq-inner">
+    <div class="rv">
+      <p class="eyebrow">Dúvidas frequentes</p>
+      <h2 style="font-size:clamp(1.85rem,7.5vw,2.5rem);max-width:16ch">Antes de agendar</h2>
+      <p style="margin-top:14px;color:var(--muted);font-size:15px">Ficou algo de fora? Manda no WhatsApp — a resposta vem direto da fisioterapeuta.</p>
+    </div>
+
+    <div class="faq rv">
+      <details>
+        <summary>Como funciona o atendimento em casa?</summary>
+        <p>A fisioterapeuta vai até você com o material necessário. A primeira visita é de anamnese e avaliação; a partir dela você recebe o plano de tratamento com orçamento. As sessões seguintes acontecem no mesmo ambiente, adaptadas ao seu espaço.</p>
+      </details>
+      <details>
+        <summary>Preciso de pedido médico?</summary>
+        <p>Não é obrigatório. A fisioterapia tem avaliação própria e você pode procurar atendimento diretamente. Se já existe um diagnóstico ou exame, traga — ajuda a montar o plano.</p>
+      </details>
+      <details>
+        <summary>Quantas sessões vou precisar?</summary>
+        <p>Isso só dá para responder depois da avaliação. O plano de tratamento indica a quantidade estimada, e há reavaliação ao longo do processo para ajustar o que for necessário.</p>
+      </details>
+      <details>
+        <summary>Teleconsulta funciona mesmo para fisioterapia?</summary>
+        <p>Funciona para orientação, exercício terapêutico, Pilates clínico e acompanhamento. O atendimento é adaptado ao seu ambiente, com objetos simples que você já tem em casa. Casos que exigem terapia manual são direcionados para o presencial.</p>
+      </details>
+      <details>
+        <summary>Quais técnicas são usadas?</summary>
+        <p>Terapia manual, eletroterapia, dry needling, Pilates clínico, terapia cognitivo-funcional e exercícios terapêuticos. A escolha depende da avaliação e da evidência para cada condição — não é um pacote fixo.</p>
+      </details>
+      <details>
+        <summary>Como levo o Antes da Queda para o meu condomínio?</summary>
+        <p>Mande mensagem no WhatsApp com o nome e a região do condomínio. A partir daí é agendada uma conversa com o síndico ou responsável para apresentar o programa, o formato das aulas e a estrutura necessária.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="sec final" id="contato">
+  <div class="wrap rv">
+    <h2>Começar é uma mensagem.</h2>
+    <p>Conte o que você está sentindo. A gente decide juntos o próximo passo.</p>
+    <div class="cta-row">
+      <a class="btn btn-1" href="https://wa.me/5511993986807" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.2-.8 1-.9 1.1-.3.2-.6 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1a11.4 11.4 0 0 0 4.4 3.9c1.6.6 1.9.5 2.3.5s1.6-.7 1.9-1.3.3-1.2.2-1.3zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+        WhatsApp (11) 99398-6807
+      </a>
+      <a class="btn btn-2" href="https://www.instagram.com/praticfisio/" target="_blank" rel="noopener">Ver o Instagram</a>
+    </div>
+    <div class="chan">
+      <span>Telefone e WhatsApp · <a href="tel:+5511993986807">(11) 99398-6807</a></span>
+      <span>E-mail · <a href="mailto:crismourah@praticfisio.com">crismourah@praticfisio.com</a></span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a class="brand" href="#top" style="font-size:17px">
+          <svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <circle cx="16" cy="16" r="15" stroke="#0F3B36" stroke-width="1.6"/>
+            <path d="M8 20c3.2 0 3.2-8 6.4-8s3.2 8 6.4 8 3.2-4 3.2-4" stroke="#C4623F" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+          Pratic Fisio
+        </a>
+        <p style="margin-top:10px;max-width:34ch">Fisioterapia domiciliar, clínica, online e em grupo. São Paulo e região.</p>
+      </div>
+      <nav class="foot-links" aria-label="Rodapé">
+        <a href="#servicos">Serviços</a>
+        <a href="#antes-da-queda">Antes da Queda</a>
+        <a href="#metodo">Como funciona</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="https://www.instagram.com/praticfisio/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+    <p class="foot-note">© <span id="yr">2026</span> Pratic Fisio · Dra. Cristiane Moura, fisioterapeuta.<br>O conteúdo deste site é informativo e não substitui avaliação profissional individual.</p>
+  </div>
+</footer>
+
+<div class="dock" id="dock">
+  <a class="btn btn-2" href="tel:+5511993986807">Ligar</a>
+  <a class="btn btn-1" href="https://wa.me/5511993986807" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// header border on scroll + dock reveal
+const hd = document.getElementById('hd');
+const dock = document.getElementById('dock');
+let last = 0;
+addEventListener('scroll', () => {
+  const y = scrollY;
+  hd.classList.toggle('stuck', y > 8);
+  dock.classList.toggle('on', y > 480);
+  last = y;
+}, {passive:true});
+
+// reveal on scroll
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  });
+}, {rootMargin:'0px 0px -60px 0px', threshold:.06});
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+// close other FAQ items
+document.querySelectorAll('#duvidas details').forEach(d => {
+  d.addEventListener('toggle', () => {
+    if (d.open) document.querySelectorAll('#duvidas details').forEach(o => { if (o !== d) o.open = false; });
+  });
+});
+</script>
+</body>
+</html>
